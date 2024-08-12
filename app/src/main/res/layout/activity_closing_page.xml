@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.closingPage"
+    android:layout_margin="20dp">
+
+    <TextView
+        android:id="@+id/thank_you"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thank you"
+        android:textColor="@color/darkbrown"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/other_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/thank_you"
+        android:text="Don’t forget to visit our store!"
+        android:textColor="@color/darkbrown"
+        android:textSize="25sp" />
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/other_line"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        tools:layout="@layout/activity_closing_page">
+    </fragment>
+
+    <Button
+        android:id="@+id/yes_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="70sp"
+        android:layout_alignParentBottom="true"
+        android:text="YES"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/my_edittext">
+    </Button>
+
+</RelativeLayout>

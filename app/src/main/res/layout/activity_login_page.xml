@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige"
+    tools:context=".Activity.LoginPage"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="277dp"
+        android:layout_height="286dp"
+        app:srcCompat="@drawable/mainlogo"></ImageView>
+
+    <TextView
+        android:id="@+id/SignInText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textSize="90px"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        ></TextView>
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+
+    <EditText
+        android:id="@+id/SignInUsername"
+        android:layout_width="350dp"
+        android:layout_height="150px"
+        android:drawableLeft="@drawable/user"
+        android:drawablePadding="10px"
+        android:background="@drawable/my_edittext"
+        android:hint="Username"
+        android:textSize="55px"
+        android:paddingHorizontal="25px"
+        android:lines="1"
+        android:maxLines="1"
+        android:singleLine="true"
+        ></EditText>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <EditText
+        android:id="@+id/SignInPassword"
+        android:layout_width="350dp"
+        android:layout_height="150px"
+        android:drawableLeft="@drawable/lock"
+        android:drawablePadding="10px"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:textSize="55px"
+        android:background="@drawable/my_edittext"
+        android:paddingLeft="30px"
+        android:lines="1"
+        android:maxLines="1"
+        android:singleLine="true"
+        >
+    </EditText>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <Button
+        android:id="@+id/LoginButton"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:background="@drawable/my_edittext"
+        ></Button>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/bottomLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Didn't have an account? "
+            android:textSize="50px"
+            android:textAlignment="center"
+            ></TextView>
+        <TextView
+            android:id="@+id/SignUpHere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/underline_register_text"
+            android:textSize="50px"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            ></TextView>
+    </LinearLayout>
+
+</LinearLayout>

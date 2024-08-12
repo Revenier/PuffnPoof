@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.DetailPage"
+    android:orientation="vertical">
+
+    <!--    Ini gambar-->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="411dp"
+        app:srcCompat="@drawable/main_logo" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="50sp"
+        android:background="@color/transparant"
+        android:layout_margin="20sp">
+
+        <ImageView
+            android:id="@+id/backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/baseline_arrow_back_24"
+            android:background="@color/brown"
+            android:padding="50px"
+            app:tint="@color/white" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="350dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_gravity="bottom"
+        app:cardCornerRadius="30sp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="50px">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/Dollname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blue Shirt Bear"
+                    android:textColor="@color/darkbrown"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@+id/rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/baseline_star_rate_24"
+                    android:drawableTint="@color/yellow"
+                    android:text="4.7"
+                    android:textColor="@color/darkbrown"
+                    android:textSize="25dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Size : "
+                    android:textColor="@color/darkbrown"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" small"
+                    android:textColor="@color/darkbrown"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description : "
+                android:textColor="@color/darkbrown"
+                android:fillViewport="true"
+                android:textSize="20sp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="122dp"
+                android:layout_marginTop="15px">
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="500px"
+                    android:lineSpacingExtra="10px"
+                    android:text="afhdsajhfsajhf  fhsadhfkahfja dhsfa jkdsahf jka  fhdsa fhdsaj fdaj hfdsaj fadkafh saj fhakdkahf djakhsja fsakhfjskaiew faia fheauhfesu aife ua fusi uaf eai uaif heaui usfe saoqieis aiosjda dj eai wofjiwao ao ejfwaio dfsadjfasl kaljfeaio fsa jefioa pqow ie sao."
+                    android:textSize="20sp" />
+            </ScrollView>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/dollprice"
+                    android:layout_marginTop="40px"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Enter your quantity here :  "
+                        android:textColor="@color/darkbrown" />
+
+                    <EditText
+                    android:id="@+id/quantity"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:drawablePadding="10px"
+                    android:background="@drawable/my_edittext"
+                    android:hint="Quantity"
+                    android:textSize="45px"
+                    android:paddingLeft="30px"
+                    android:textAlignment="center"
+                    android:inputType="number"
+                    android:padding="10px"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    ></EditText>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/dollprice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_above="@+id/buy_button"
+                    android:text="$ 9.99"
+                    android:textColor="@color/darkbrown"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/buy_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="10sp"
+                    android:background="@drawable/my_edittext"
+                    android:paddingHorizontal="100sp"
+                    android:text="Buy This!"
+                    android:textSize="20sp" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
